@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content ="noindex, nofollow" >
+    <meta name="description" content = "Assignment 5 for week 6, displaying an html document for both desktop and mobile while also using flexbox.">
+    <title>Week 6 assignment by Dallen Sandstrom</title>
+</head>
+<style>
+    
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav, div.right, div.searchbar, div.socials, a{
+    display: none;
+}
+div.flex{
+    display: flex;
+    flex-flow: row nowrap;
+}
+div.left{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+img{
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    border-radius: 10px;
+}
+image{
+    margin: 5px;
+}
+a{
+    padding: .5rem 3rem;
+    background-color: coral;
+    color: white;
+    text-align: center;
+    border-radius: .5rem;
+    width: fit-content;
+}
+div.searchbar{
+    padding: 3px 3rem;
+}
+header > h1{
+    border-radius: 5px;
+    margin: 0 5px;
+}
+footer {
+    background-color: grey;
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}
+div.top, div.bottom{
+    padding: 1rem .5rem;
+    border-top: 2px solid lightgray;
+    width: 50%;
+}
+.caption{
+    color: grey;
+    margin-bottom: 5px;
+}
+nav{
+    text-align: center;
+    background-color: lightgray;
+    padding: .8rem;
+    color: coral;
+}
+div.searchbar{
+    background-color: lightgrey;
+    padding: .5rem 6rem;
+    width: fit-content;
+    border-radius: 10px;
+}
+h1{
+    font-size: 1.5rem
+}
+
+@media all and (min-width: 500px){
+main{
+    padding: 2rem;
+    margin: 0 10%;
+}
+nav, div.searchbar, div.socials, a{
+    display: block;
+}
+div.right{
+    margin-left: 5%;
+    background-color: lightgray;
+    display: block;
+    height: 600px;
+    width: 40%;
+    padding:  0 10px;
+    border-radius: 20px;
+}
+div.left{
+    width: 100%;
+}
+div.top, div.bottom{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.flex{
+    justify-content: space-between;
+}
+div.top{
+    padding: 0rem .5rem;
+    padding-bottom: 1rem;
+    border-top: 0px solid lightgray;
+}
+img{
+    height: 200px;
+    width: 200px;
+}
+header, footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 1rem;
+}
+div.text{
+    margin-left: 1rem;
+}
+img.cornered{
+    width: 100%;
+    border-radius: 0;
+}
+h1.caption{
+    margin-top: 0px;
+}
+}
+
+</style>
+<body>
+    <header>
+    <h1>Dallen Sandstrom</h1>
+    <div class="searchbar">Type to search</div>
+    </header>
+    <nav>
+        <div>Home &nbsp; Recent &nbsp; Posts &nbsp; Old posts &nbsp; Contact us &nbsp; About us</div>
+    </nav>
+    <main>
+
+        <div class="flex">
+
+            <div class="left">
+                
+        <div class="top">
+            <div class="image"><img src="https://images.unsplash.com/photo-1472073707371-aed1a89bfcaa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8aGlsbHNpZGV8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="An image of a rocky mountainside"></div>
+                <div class="text">
+            <h1 class="caption">First post with image</h1>
+            <div class="caption">By Adam Smith, Jan 1 2021</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro nostrum, nemo itaque corrupti ea aliquid minus debitis soluta sed ex quos maiores, nulla perferendis. Eveniet laudantium placeat harum quis.</p>
+            <a>Read More</a>
+                </div>
+        </div>
+
+        <div class="bottom">
+            <div class="image"><img src="https://images.unsplash.com/photo-1494472155656-f34e81b17ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJmYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="An image of a waterfall"></div>
+                <div class="text">
+            <h1 class="caption">Second post with image</h1>
+            <div class="caption">By Jhon Doe, Jan 1 2021</div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro nostrum, nemo itaque corrupti ea aliquid minus debitis soluta sed ex quos maiores, nulla perferendis. Eveniet laudantium placeat harum quis.</p>
+            <a>Read More</a>
+                </div>
+        </div>
+
+    </div>
+
+        <div class="right">
+            <h1>Secondary content here</h1>
+            <img class = "cornered" src="https://images.unsplash.com/photo-1494472155656-f34e81b17ddc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2F0ZXJmYWxsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="An image of a waterfall">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae porro nostrum, nemo itaque corrupti ea aliquid minus debitis soluta sed ex quos maiores, nulla perferendis. Eveniet laudantium placeat harum quis.</p>
+            <div class="spacer"></div>
+        </div>
+
+    </div>
+    </main>
+        <footer>
+            <div class = "socials">Facebook &nbsp; Twitter &nbsp; Youtube</div>
+            <div>&copy; All rights reserved</div>
+        </footer>
+</body>
+</html>

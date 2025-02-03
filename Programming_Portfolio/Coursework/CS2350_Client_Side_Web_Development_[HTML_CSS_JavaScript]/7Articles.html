@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th practice assignment Dallen Sandstrom</title>
+    <style>
+        :root{
+            box-sizing: border-box;
+            font-family: arial;
+            font-size: 16px;
+        }
+        *, ::after, ::before{
+            box-sizing: inherit;
+        }
+        main{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        .left{
+            float: left;
+            padding: 5px 8px;
+        }
+        .right{
+            float: right;
+            padding: 5px 8px;
+        }
+        .orange{
+            color: orange;
+        }
+        .salmon{
+            color: salmon;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        h1{
+            padding-bottom: 1 rem;
+        }
+        img{
+            width: 40%;
+            margin: 5px;
+            float: left;
+            border-radius: 15px;
+            border: 2px solid darkgrey;
+            padding: 0px
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .circle{
+            margin: 10px;
+            font-size: 1.5rem; 
+            float: left;
+            width: 150px;
+            height: 150px;
+            border-radius: 75px;
+            background-color: black;
+            color:white;
+            text-align: center;
+        }
+        .vcenter .circle{
+            line-height: 150px;
+        }
+        .evencolumns .colodd, .evencolumns .coleven{
+            float: left;
+            padding-bottom: 9999999px;
+            margin-bottom: -9999999px;
+        }
+        .evencolumns{
+            overflow: hidden;
+        }
+        .coleven, .colodd{
+             color: white;
+             padding: .5rem;
+        }
+        .coleven{
+            width: 60%;
+            background-color: black;  
+        }
+        .colodd{
+            width: 20%;
+            background-color: gray;
+        }
+        header{
+            border-bottom: 1px solid lightblue;
+        }
+        footer{
+            border-top: 1px solid lightblue;
+            margin-top: 2%;
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <div class = "left bold">Floated Menus:</div>
+        <span class = "left orange">One Two</span>
+        <div class = "right orange">Three Four</div>
+    </header>
+    <main>
+            
+        <article class="clearfix">
+            <h1><span class="salmon">&lt;Article 1&gt;:</span> Wrapping text around an image</h1>
+            <p class="withimg">
+                <img src="https://images.unsplash.com/photo-1601711635481-b2c394118b53?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80" alt="A black and white city">
+                <h1>A secondary heading</h1>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium dignissimos tenetur magnam, explicabo numquam expedita harum dicta tempora porro rerum. Repellendus ducimus hic incidunt sed excepturi numquam ad, ratione vero! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore quod molestiae doloribus amet odio, sed officia modi aspernatur laudantium assumenda sapiente illum, iure, aut perspiciatis explicabo vel praesentium officiis voluptatibus? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus dicta nesciunt magni officiis tempora harum modi eligendi, suscipit, nisi autem sit et? Sit, non. Fugit sint consectetur in ullam id?
+            </p>
+        </article>
+        <article>
+            <h1><span class="salmon">&lt;Article 2&gt;:</span> Centering text vertically</h1>
+            <div class="clearfix vcenter">
+            <div class="circle">Selectors</div>
+            <div class="circle">Inheritance</div>
+            <div class="circle">Cascade</div>
+            <div class="circle">Specificity</div>
+        </div>
+        </article>
+
+        <article>
+            <h1><span class="salmon">&lt;Article 3&gt;:</span> Equal height columns</h1>
+            <div class="evencolumns">
+            <div class = "colodd">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat natus neque qui eaque tenetur nihil facilis ipsum? At aliquam est doloremque? Laudantium, odio. In accusamus hic quas facilis repellat quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam ducimus voluptas, fugiat labore eos eum aut facilis repudiandae iste maxime possimus doloribus! Sit, temporibus aspernatur? Vel alias at esse nobis?
+            </div>
+            <div class = "coleven">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos asperiores expedita vel deserunt provident omnis aut, similique voluptatibus dolores doloribus atque cumque unde blanditiis accusamus dolorum laudantium quos sit officia! Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum asperiores, soluta consectetur dolor architecto hic optio consequuntur alias error maxime quibusdam saepe, laborum assumenda modi at, iste dicta dolore. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt vero nihil dolor pariatur doloribus! Quia repellendus dolorum ab dolor quo voluptatum ut reprehenderit aperiam eligendi, accusantium expedita blanditiis dignissimos quae!
+            </div>
+            <div class = "colodd">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, distinctio vel quo nobis modi quia porro quisquam consequuntur ut quidem rem asperiores animi assumenda accusantium aliquid dolore architecto! Corporis, accusantium.
+            </div>
+        </div>
+        </article>
+    </main>
+    <footer>
+        <div class = "left">Dallen Sandstrom</div>
+        <div class = "right">&copy; All rights reserved</div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th assignment Dallen Sandstrom</title>
+    <style>
+        :root{
+            box-sizing: border-box;
+            font-family: arial;
+            font-size: 16px;
+        }
+        *, ::after, ::before{
+            box-sizing: inherit;
+        }
+        main{
+            margin-left: 15%;
+            margin-right: 15%;
+        }
+        body{
+            margin: 0px;
+        }
+        .left{
+            float: left;
+            padding: 5px 8px;
+        }
+        .right{
+            float: right;
+            padding: 5px 8px;
+        }
+        .bold{
+            font-weight: bold;
+        }
+        .orange{
+            color: orangered;
+        }
+        .underlined{
+            border-bottom: 2px solid orangered;
+        }
+        h1{
+            padding-bottom: 1 rem;
+        }
+        .clearfix::after{
+            content: "";
+            clear: both;
+            display: table;
+        }
+        header{
+            background-color: gainsboro;
+            border-bottom: 1px solid grey;
+            padding: 5px 1rem;
+            margin: 0px;
+        }
+        footer{
+            padding: 1rem 20% 4rem 20%;
+        }
+        a {
+            color: white;
+            background-color: orangered;
+            padding: 10px;
+            margin-right: 5px;
+            border-radius: 5px;
+        }
+        p {
+            color: grey;
+        }
+        .paragraph-and-video{
+            border-bottom: 2px solid gainsboro;
+        }
+        div.button{
+            margin: 0 auto;
+            width: fit-content;
+            margin-top: 2 rem;
+        }
+        div.button > a{
+            padding: 10px 40px;
+        }
+        table {
+            background-color: rgb(66, 66, 66);
+            margin-top: 2rem;
+            width: 100%;
+            padding: 1rem .5rem;
+        }
+        td{
+            color: orangered;
+            padding-left: 1rem;
+        }
+        th{
+            text-align: left;
+            color: white;
+        }
+        img{
+            height: 40%;
+            width: 100%;
+        }
+        .columns{
+            display: table;
+            margin-bottom: 1rem;
+            border-spacing: 2rem;
+        }
+        .piccolumn{
+        width: 10%;
+        border: 1px solid gray;
+        display: table-cell;
+        border-spacing: 2rem;
+
+        }
+        .video-text{
+            width: auto;
+            max-width: 30%;
+        }
+        .piccolumn :nth-child(2){
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header class="clearfix">
+        <div class="left">Utah Mighty <span class="bold">FIVE</span></div>
+        <div class="left orange">One</div>
+        <div class="left orange">Two</div>
+        <div class="left orange">Three</div>
+        <div class="left orange">Four</div>
+        <div class="left orange">Five</div>
+        <div class="right orange underlined">Login</div>
+        <div class="right orange">Account</div>
+    </header>
+    <main>
+
+        <section class="clearfix paragraph-and-video">
+        <div class="video-text left">
+            <h1>Close Your Eyes and Open Your Mind</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem, esse repudiandae eveniet reprehenderit et optio id maxime. Quia asperiores, esse, saepe laborum natus nihil dolorem minus possimus accusantium iure perspiciatis?</p>
+            <a>Take a Tour</a>
+            <a>Start a free trial</a>
+        </div>
+        <div class="right embed">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/iKJ-TuDl8h0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+
+        <section>
+            <h2>What are they?</h2>
+            <div class="columns">
+            <div class="piccolumn"><img src="https://images.unsplash.com/photo-1514820654155-15e52b32874e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YnJ5Y2UlMjBjYW55b24lMjBuYXRpb25hbCUyMHBhcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="An image of Bryce Canyon National Park">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat enim libero, excepturi necessitatibus voluptates voluptas ipsam quae maxime rem aperiam suscipit laudantium voluptate ab sed aspernatur totam saepe pariatur. Rem.</p>
+            </div>
+            <div class="piccolumn middle"><img src="https://images.unsplash.com/photo-1533953263536-c12fa38d0bf9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="An image of Zion National Park">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, neque. Debitis perferendis, laudantium fugit tempore ut minus provident delectus inventore repellendus explicabo vero placeat, repudiandae aspernatur similique. Nulla, consequuntur nesciunt distinctio numquam ducimus veritatis alias cupiditate molestiae explicabo accusamus doloribus est, beatae sapiente possimus saepe quia in?</p>
+            </div>
+            <div class="piccolumn"><img src="https://images.unsplash.com/photo-1615046727544-8fd9ac9836cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="An image of Arches National Park">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam quod, dolore aliquam minima corrupti optio eveniet, nobis magni inventore repellat obcaecati reprehenderit omnis dolores sed aut quibusdam itaque quas! Aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, necessitatibus dicta! Iste soluta, optio cupiditate impedit perspiciatis atque quidem aut cum sit explicabo tenetur sapiente quis sint fuga aliquam excepturi?</p>
+            </div>
+            </div>
+            <div class="button">
+                <a>Remaining Info</a>
+            </div>
+        </section>
+
+        <section>
+            <table>
+                <thead>
+                <tr>
+                    <th>Offices</th>
+                    <th>Links</th>
+                    <th>Contact</th>
+                    <th>Locations</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>One</td>
+                    <td>One</td>
+                    <td>Twitter</td>
+                    <td>One</td>
+                </tr>
+                <tr>
+                    <td>Two</td>
+                    <td>Two</td>
+                    <td>Facebook</td>
+                    <td>Two</td>
+                </tr>
+                <tr>
+                    <td>Three</td>
+                    <td>Three</td>
+                    <td>Instagram</td>
+                    <td>Three</td>
+                </tr>
+                <tr>
+                    <td>Four</td>
+                    <td>Four</td>
+                    <td>Pinterest</td>
+                    <td>Four</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+    <footer>
+        <div class= "left orange">Legal</div>
+        <div class= "left orange">Partner</div>
+        <div class= "left orange">Explore</div>
+        <div class = "right">&copy; All rights reserved</div>
+    </footer>
+</body>
+</html>
